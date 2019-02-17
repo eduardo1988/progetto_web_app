@@ -1,0 +1,26 @@
+{
+  "name": "webapp",
+  "version": "1.0.0",
+  "description": "a simple web-app to booking a aesthetic services online",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eduardo1988/progetto_web_app.git"
+  },
+  "keywords": [
+    "Eduardo",
+    "Romero"
+  ],
+  "author": "Eduardo Romero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eduardo1988/progetto_web_app/issues"
+  },
+  "homepage": "https://github.com/eduardo1988/progetto_web_app#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
