@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <title><%= title %></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="nodeJS Template">
+        <meta name="author" content="Luciano Resende">
+        
+        <!-- styles -->
+        <link href="/lib/boostrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/stylesheets/style.css" rel="stylesheet">
+        
+        <!-- Fav and touch icons -->
+        <link rel="shortcut icon" href="/images/favicon.ico">
+        <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114x114.png">
+</head>
+
+<body>
+
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                <a class="navbar-brand" href="/">Home</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/">Prenotazione</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/info">info</a>
+                        </li>
+                        
+                    </ul>
+            
+            
+                    <div class="form-inline mt-2 mt-md-0">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item ">
+                                <a class="nav-link" href="/login">log-in</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="/users">Aministratore</a>
+                            </li>
+                        </ul>
+                    </div>
+            
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/auth/facebook"><img src="images/login-with-facebook.png"></a>
+                        </li>
+                    </ul>
+            
+                </div>
+            </nav>
+
+
+<!-- Insert Body here -->
+<main role="main" class="container">
+
+    <section class="content-contact-us">
+		<div class="container">
+			<div class="row">
+				<div class="responsive col-md-10 col-lg-6">
+					<h6 class="medium-text">Contact Us</h6>
+					<h3 class="larg-text">Get in Touch</h3>
+					<p>
+						Donec quis euismod purus. Donec feugiat ligula rhoncus, varius nisl sed, tincidunt lectus. Nulla vulputate, lectus vel volutpat efficitur, orci lacus sodales sem, at interdum quam ligula sit amet quam.
+					</p>
+					<ul>
+						<li>ADDRESS: 100 Tenth Avenue, New York City, NY 1001</li>
+						<li>FOR BOOKING: (044) 359 0173</li>
+						<li class="follow-us">FOLLOW US ON: 
+							<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
+							<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+						</li>
+					</ul>
+				</div>
+                
+                <div class="contact1">
+                    <div class="container-contact1">
+                        
+            
+                        <form class="contact1-form validate-form">
+                            <span class="contact1-form-title">
+                                Get in touch
+                            </span>
+            
+                            <div class="wrap-input1 validate-input" data-validate = "Name is required">
+                                <input class="input1" type="text" name="name" placeholder="Name">
+                                <span class="shadow-input1"></span>
+                            </div>
+            
+                            <div class="wrap-input1 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                                <input class="input1" type="text" name="email" placeholder="Email">
+                                <span class="shadow-input1"></span>
+                            </div>
+            
+                            <div class="wrap-input1 validate-input" data-validate = "Subject is required">
+                                <input class="input1" type="text" name="subject" placeholder="Subject">
+                                <span class="shadow-input1"></span>
+                            </div>
+            
+                            <div class="wrap-input1 validate-input" data-validate = "Message is required">
+                                <textarea class="input1" name="message" placeholder="Message"></textarea>
+                                <span class="shadow-input1"></span>
+                            </div>
+            
+                            <div class="container-contact1-form-btn">
+                                <button class="contact1-form-btn">
+                                    <span>
+                                        Send Email
+                                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                                    </span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+			</div>
+
+			
+		</div>
+	</section>
+
+</main><!-- /.container -->
+
+<footer class="footer">
+        <div class="container">
+            <span class="text-muted">© Copyright Edaurdo Romero- 2014-2019.</span>
+        </div>
+    </footer>
+
+    <script src="/lib/jquery/jquery-3.3.1.min.js"></script>
+
+    <script src="/lib/boostrap/js/bootstrap.min.js"></script>
+</body>
+</html>

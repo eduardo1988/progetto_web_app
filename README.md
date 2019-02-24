@@ -9,3 +9,8 @@ Abbiamo utilizzato queste tecnologie:
 *Sqlite
 *Template bootstrap
 *API 
+
+
+
+Per far partire app:
+nodemon app.js

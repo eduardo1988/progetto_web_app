@@ -21,6 +21,32 @@
   },
   "homepage": "https://github.com/eduardo1988/progetto_web_app#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "body-parser": "^1.18.3",
+    "bootstrap": "^4.3.1",
+    "cookie-parser": "^1.4.4",
+    "cookie-session": "^2.0.0-beta.3",
+    "counterup": "^1.0.2",
+    "debug": "^4.1.1",
+    "ejs": "^2.6.1",
+    "ejs-locals": "^1.0.2",
+    "elegant-icons": "0.0.1",
+    "express": "^4.16.4",
+    "express-partials": "^0.3.0",
+    "express-session": "^1.15.6",
+    "font-awesome": "^4.7.0",
+    "imagesloaded": "^4.1.4",
+    "isotope-layout": "^3.0.6",
+    "jarallax": "^1.10.7",
+    "jquery": "^3.3.1",
+    "jquery-countdown": "^2.2.0",
+    "jquery-waypoints": "^2.0.5",
+    "jquery.easing": "^1.4.1",
+    "magnific-popup": "^1.1.0",
+    "nodemon": "^1.18.10",
+    "owl.carousel2": "^2.2.1",
+    "popper.js": "^1.14.7",
+    "pug": "^2.0.3",
+    "serve-favicon": "^2.5.0",
+    "wowjs": "^1.1.3"
   }
 }
