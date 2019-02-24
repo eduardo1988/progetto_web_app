@@ -8,7 +8,7 @@ body {
 }
 
 .footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
@@ -21,8 +21,8 @@ body {
 
 /* new Line for info page*/
 .contact1 {
-  width: 100%;
-  min-height: 100%;
+  width: 50%;
+  min-height: 50%;
   padding: 15px;
 
   background: #009bff;
@@ -42,7 +42,7 @@ body {
 }
 
 .container-contact1 {
-  width: 1163px;
+  width: 512px;
   background: #fff;
   border-radius: 10px;
   overflow: hidden;
@@ -59,6 +59,41 @@ body {
   padding: 90px 130px 88px 148px;
 }
 
+/*---------------------------------------------*/
+input {
+	outline: none;
+	border: none;
+}
+
+textarea {
+  outline: none;
+  border: none;
+}
+
+textarea:focus, input:focus {
+  border-color: transparent !important;
+}
+
+input::-webkit-input-placeholder { color: #999999; }
+input:-moz-placeholder { color: #999999; }
+input::-moz-placeholder { color: #999999; }
+input:-ms-input-placeholder { color: #999999; }
+
+textarea::-webkit-input-placeholder { color: #999999; }
+textarea:-moz-placeholder { color: #999999; }
+textarea::-moz-placeholder { color: #999999; }
+textarea:-ms-input-placeholder { color: #999999; }
+
+/*---------------------------------------------*/
+button {
+	outline: none !important;
+	border: none;
+	background: transparent;
+}
+
+button:hover {
+	cursor: pointer;
+}
 
 
 /*------------------------------------------------------------------
