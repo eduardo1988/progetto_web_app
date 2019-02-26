@@ -7,6 +7,20 @@ body {
   /* font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; */
 }
 
+main {
+
+  background:url(../images/index_prova.jpg);
+  width: 100%;
+  
+
+
+
+
+}
+
+
+
+
 .footer {
   position: fixed;
   bottom: 0;

@@ -65,7 +65,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="responsive col-md-10 col-lg-6">
-					<h6 class="medium-text">Contact Us</h6>
+					<h6 class="medium-text">Contact </h6>
 					<h3 class="larg-text">Get in Touch</h3>
 					<p>
 						Donec quis euismod purus. Donec feugiat ligula rhoncus, varius nisl sed, tincidunt lectus. Nulla vulputate, lectus vel volutpat efficitur, orci lacus sodales sem, at interdum quam ligula sit amet quam.
@@ -86,28 +86,28 @@
                     <div class="container-contact1">
                         
             
-                        <form class="contact1-form validate-form">
+                        <form class="contact1-form validate-form" action= "/contact" method="POST">
                             <span class="contact1-form-title">
-                                Get in touch
+                                Contact us:
                             </span>
             
                             <div class="wrap-input1 validate-input" data-validate = "Name is required">
-                                <input class="input1" type="text" name="name" placeholder="Name">
+                                <input class="input1" type="text" id="name" name="name" placeholder="Name">
                                 <span class="shadow-input1"></span>
                             </div>
             
                             <div class="wrap-input1 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-                                <input class="input1" type="text" name="email" placeholder="Email">
+                                <input class="input1" type="text" id="email" name="email" placeholder="Email: example@domain.com">
                                 <span class="shadow-input1"></span>
                             </div>
             
                             <div class="wrap-input1 validate-input" data-validate = "Subject is required">
-                                <input class="input1" type="text" name="subject" placeholder="Subject">
+                                <input class="input1" type="text" id="subject" name="subject" placeholder="Subject">
                                 <span class="shadow-input1"></span>
                             </div>
             
                             <div class="wrap-input1 validate-input" data-validate = "Message is required">
-                                <textarea class="input1" name="message" placeholder="Message"></textarea>
+                                <textarea class="input1" id="message" name="message" placeholder="Message"></textarea>
                                 <span class="shadow-input1"></span>
                             </div>
             
