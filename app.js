@@ -51,7 +51,7 @@ app.get('/booking',function(req,res){
 });
 
 
-//route info
+//route info (START)
 app.get('/info',function(req,res){
     res.render('info',{title: 'Info'});
 });
@@ -96,6 +96,7 @@ app.post('/contact',function(req,res,next){
 
     
 });
+//end route info 
 
 //Inizializio il server
 var port = 3000;
