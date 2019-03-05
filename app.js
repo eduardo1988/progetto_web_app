@@ -40,6 +40,11 @@ app.get('/login',function(req,res){
     res.render('login',{title: 'Log-in'});
 });
 
+//route signup
+app.get('/Signup',function(req,res){
+    res.render('Signup',{title: 'Sign-up'});
+});
+
 //route admin
 app.get('/users',function(req,res){
     res.render('users',{title: 'Users'});

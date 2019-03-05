@@ -18,7 +18,7 @@ function showSlides() {
 
 
 
-/*// code NO AUTO SLIDES :
+/*// code to NO AUTO SLIDES :
 var slideIndex = 1;
 showSlides(slideIndex);
 

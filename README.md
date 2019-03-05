@@ -12,5 +12,14 @@ Abbiamo utilizzato queste tecnologie:
 
 
 
-Per far partire app:
+Per ottenere l'applicazione:
+
+
+# Clone the repo (and fetch only the latest commits)
+git clone https://github.com/eduardo1988/progetto_web_app.git
+cd progetto_web_app
+
+# Install local dependencies
+npm install
 nodemon app.js
+
