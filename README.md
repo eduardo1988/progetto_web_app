@@ -21,5 +21,6 @@ cd progetto_web_app
 
 # Install local dependencies
 npm install
+# To run tha application
 nodemon app.js
 
