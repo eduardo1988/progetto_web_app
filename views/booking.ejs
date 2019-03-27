@@ -2,11 +2,10 @@
 <html lang="en">
 <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title><%= title %></title>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="nodeJS Template">
-        
+        <meta name="author" content="Eduardo Romero">
         
         <!-- styles -->
         <link href="/lib/boostrap/css/bootstrap.min.css" rel="stylesheet">
@@ -49,12 +48,12 @@
             
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="/auth/facebook"><img src="images/login-with-facebook.png"></a>
+                            <a class="nav-link" href="/admin">Admin</a>
                         </li>
                     </ul>
             
                 </div>
-        </nav>
+            </nav>
 
 
 <!-- Insert Body here -->
@@ -71,82 +70,46 @@
             
             <div class="container">
                 <!-- Content here -->
-                
+               
                 <div class="row">
-                    
-                    <h2>forse metterò un calendario</h2>
+                    <div class="col">
+                        <img src="http://www.althaeabellezza.it/images/logo@2x.jpg" />
+            
                        
+                      </div>
                 </div>
-            
-            
                 <div class="row">
                     <div class="col-sm">
-                    <h3> per poter prenotarvi senza registrazione</h3>    
+                         Loggati per accedere alla tua pagina      
                     </div>
                     <div class="col-6">
-                       
-                      <p>  </p>
+                        <form action="/login" method="POST">
+                            <div class="form-group">
+                              <label for="username">Username</label>
+                              <input type="text" class="form-control" id="username" name="username" placeholder="Enter username">
+                              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            </div>
+                            <div class="form-group">
+                              <label for="password">Password</label>
+                              <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                          </form>
+                      </ul>
             
             
                     </div>
                     <div class="col-sm">
-                        <p> </p>
+                      
             
                     </div>
-                </div>
-            </div>
+                  </div>
+              </div>
         
     </div>
 
 </main><!-- /.container -->
-
-
-
-
-<table width="900" border="0" cellspacing="0" cellpadding="0" align="center">
-    
-    
-    
-    <tr>
-        <td align="center" valign="middle" width="900" height="100">
-        <br>
-        <img src="/images/line.gif" width="900" height="30" title="" alt="" border="0" hspace="0">
-        </td>
-    </tr>
-    
-    <tr>
-        <td align="center" valign="middle" width="900" height="400">
-        <font face="trebuchet ms" size="5" color="#e95a15">LISTINO PREZZI</font>
-        <br><br>
-    
-        <img src="/images/listino2.jpg" width="400" height="457" title="" alt="" border="0" hspace="5">
-        <img src="/images/listino1.jpg" width="400" height="457" title="" alt="" border="0" hspace="5">
-    
-        </td>
-    </tr>
-</table>
-<div>
-    <div class="row">                   
-        <h2> PER UN ESPERIENZA UNICA</h2>          
-    </div>
-
-    <div class="row">
-        <div class="col-sm">
-        <h3>Prenota un appuntamento: </h3>    
-        </div>
-
-        <p> Clicca qui per poter prenotare <a href="/login"> Log-in</a>  </p>
-        <div class="col-6">
-   
-        </div>
-        <div class="col-sm">
-            <p>terza colonna temp</p>
-
-        </div>
-    </div>
-</div>
-
-
 
 <footer class="footer">
         <div class="container">

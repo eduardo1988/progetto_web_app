@@ -11,10 +11,9 @@
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
     <link href="/stylesheets/style.css" rel="stylesheet">   
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"> 
+    
 
-    <!--script-->
-    <script src="/js/signup.js"></script>
+    
     <!-- Firebase App is always required and must be first -->
     <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase-app.js"></script>
 
@@ -24,16 +23,7 @@
 
     <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
     <script>
-        // Initialize Firebase
-    var config = {
-        apiKey: "AIzaSyA1O6xRDWtwCGVyB-GQRyLmHlSKxFbdmX0",
-        authDomain: "fireproject-13ab0.firebaseapp.com",
-        databaseURL: "https://fireproject-13ab0.firebaseio.com",
-        projectId: "fireproject-13ab0",
-        storageBucket: "fireproject-13ab0.appspot.com",
-        messagingSenderId: "61885338920"
-    };
-    firebase.initializeApp(config);
+     
     
     </script>
 
@@ -53,64 +43,44 @@
             </header >
 
     </div>
-        
-        
-
-        <div class="container">
+             
+    <div class="container">
        
-        
         <div class="card bg-light">
-        <article class="card-body mx-auto" style="max-width: 400px;">
-            <h4 class="card-title mt-3 text-center">Create Account</h4>
-            <p class="text-center">Get started with your free account</p>
-            <p>
-                <button onclick="googleLogin()" class="btn btn-block btn-google"> <i class="fab fa-google"></i> Login via Google</button>
-                <a href="" class="btn btn-block btn-twitter"> <i class="fab fa-twitter"></i>   Login via Twitter</a>
-                <a href="" class="btn btn-block btn-facebook"> <i class="fab fa-facebook-f"></i>   Login via facebook</a>
-            </p>
-            <p class="divider-text">
-                <span class="bg-light">OR</span>
-            </p>
-            <form>
-            <div class="form-group input-group">
-                <div class="input-group-prepend">
-                    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
-                 </div>
-                <input name="" class="form-control" placeholder="Full name" type="text">
-            </div> <!-- form-group// -->
-            <div class="form-group input-group">
-                <div class="input-group-prepend">
-                    <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
-                 </div>
-                <input name="" class="form-control" placeholder="Email address" type="email">
-            </div> <!-- form-group// -->
-            <div class="form-group input-group">
-                <div class="input-group-prepend">
-                    <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
-                </div>
-                <input name="" class="form-control" placeholder="Phone number" type="text">
-            </div> <!-- form-group// -->
-            <div class="form-group input-group">
-                <div class="input-group-prepend">
-                    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
-                </div>
-                <input class="form-control" placeholder="Create password" type="password">
-            </div> <!-- form-group// -->                                    
-            <div class="form-group">
-                <button type="submit" class="btn btn-primary btn-block"> Create Account  </button>
-            </div> <!-- form-group// -->      
-            <p class="text-center">Hai un account? <a href="/login">Log In</a> </p>                                                                 
-        </form>
-        </article>
+            <article class="card-body mx-auto" style="max-width: 400px;">
+                <h4 class="card-title mt-3 text-center">Create Account</h4>
+                <div class="register">
+                <form action="/login" method="POST">
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
+                    </div>
+                    <input type="email" class="form-control email" placeholder="Email address" >
+                </div> <!-- form-group// -->
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                    </div>
+                    <input type="password" class="form-control password" placeholder="Create password" >
+                </div> <!-- form-group// -->                                    
+                <div class="form-group">
+                    <button class="btn btn-primary btn-block"> Create Account  </button>
+                </div> <!-- form-group// -->      
+                <p class="text-center">Hai un account? <a href="/login">Log In</a> </p>
+                </div>         <!-- div-class register// -->                                                         
+                </form>
+            </article>
         </div> <!-- card.// -->
         
-        </div> 
-        <!--container end.//-->
+    </div> 
+    <!--container end.//-->
+
+    <!--script-->
+    <script src="/lib/jquery/jquery-3.3.1.min.js"></script>
+    <script src="/lib/boostrap/js/bootstrap.min.js"></script>
+    <script src="/js/signup.js"></script>
         
-        
-<script>
-  
-</script>
+
 
     
 </body>

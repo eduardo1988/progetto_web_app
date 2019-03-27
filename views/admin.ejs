@@ -9,21 +9,7 @@
         
         <!-- styles -->
         <link href="/lib/boostrap/css/bootstrap.min.css" rel="stylesheet">
-        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
         <link href="/stylesheets/style.css" rel="stylesheet">
-
-        <!--script-->
-        
-        <!-- Firebase App is always required and must be first -->
-        <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase-app.js"></script>
-
-        <!-- Add additional services that you want to use -->
-        <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase-auth.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase-database.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/5.8.6/firebase.js"></script>
-
-        
         
         <!-- Fav and touch icons -->
         <link rel="shortcut icon" href="/images/favicon.ico">
@@ -70,7 +56,7 @@
 
 
 <!-- Insert Body here -->
-<main role="main" class="container">
+
 
     <div class="container">
         <!-- Content here -->
@@ -84,43 +70,22 @@
         </div>
         <div class="row">
             <div class="col-sm">
-                 Loggati per accedere alla tua pagina      
+                <h3>Accedi all'area protetta</h3>    
             </div>
             <div class="col-6">
-                <div class="login">
-                    <form action="/users" method="POST">
-                        <div class="form-group">
-                            <label for="email">Email Account</label>
-                            <input type="email" class="form-control email" id="email" name="email" placeholder="Enter email valid">
-                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                        </div>
-                        <div class="form-group">
-                            <label for="password">Password</label>
-                            <input type="password" class="form-control password" id="password" name="password" placeholder="Password">
-                        </div>
-                        <button  class="btn btn-primary">Submit</button>
+                <form action="/users" method="POST">
+                    <div class="form-group">
+                      <label for="username">Adminstrator</label>
+                      <input type="text" class="form-control" id="username" name="username" placeholder="Enter username">
+                      <small id="emailHelp" class="form-text text-muted">Protect Area</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="password">Password</label>
+                      <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+                    </div>
                     
-                        <article class="card-body mx-auto" style="max-width: 400px;">
-                            <p class="divider-text">
-                                <span class="bg-light">OPPURE</span>
-                            </p>
-                        
-                        </article>
-                    </form>
-                </div>
-                <div>
-                    <p>oppure se non sei registrato clicca qui :
-                    
-                    <br> <a href="signup"> <button type="submit" class="btn btn-primary">Sign up</button></a> 
-                    </p>
-                </div>
-
-                <h4 class="card-title mt-3 text-center">Accedi direttamente con </h4>
-                <p>
-                    <button  onclick="googleLogin()" class="btn btn-block btn-google"> <i class="fab fa-google"></i> Google</button>
-                    <button  onclick="twitterLogin()" class="btn btn-block btn-twitter"> <i class="fab fa-twitter"></i> Twitter</button>
-                    <button  onclick="facebookLogin()" class="btn btn-block btn-facebook"> <i class="fab fa-facebook-f"></i> facebook</button>
-                </p>
+                    <button type="submit" class="btn btn-primary">log-in</button>
+                  </form>
               </ul>
     
     
@@ -134,7 +99,7 @@
 
     
 
-</main><!-- /.container -->
+
 
 <footer class="footer">
         <div class="container">
@@ -143,7 +108,7 @@
     </footer>
 
     <script src="/lib/jquery/jquery-3.3.1.min.js"></script>
+
     <script src="/lib/boostrap/js/bootstrap.min.js"></script>
-    <script src="/js/login.js"></script>
 </body>
 </html>

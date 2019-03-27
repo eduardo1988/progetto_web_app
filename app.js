@@ -40,19 +40,30 @@ app.get('/login',function(req,res){
     res.render('login',{title: 'Log-in'});
 });
 
-//route signup
-app.get('/Signup',function(req,res){
-    res.render('Signup',{title: 'Sign-up'});
+//route admin
+app.get('/admin',function(req,res){
+    res.render('admin',{title: 'Admin'});
 });
 
-//route admin
+
+
 app.get('/users',function(req,res){
-    res.render('users',{title: 'Users'});
+    res.render('users',{title: 'Protect Area '});
 });
+// codice temporaneo per pagin admin
+app.post('/users',function(req,res){
+    res.render('users',{title: 'Protect Area '});
+});
+
 
 //route Prenotazione
 app.get('/booking',function(req,res){
     res.render('booking',{title: 'Prenotazione'});
+});
+
+//route signup
+app.get('/signup',function(req,res){
+    res.render('signup',{title: 'Sign-up'});
 });
 
 
