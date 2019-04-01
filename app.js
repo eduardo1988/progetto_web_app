@@ -1,4 +1,4 @@
-//dipendenza di node per fare applicazioni web
+//dipendenze di node per fare applicazioni web
 var fs = require('fs');
 const express = require('express'); // framework
 var partials   = require('express-partials');
@@ -45,14 +45,21 @@ app.get('/admin',function(req,res){
     res.render('admin',{title: 'Admin'});
 });
 
-
-
-app.get('/users',function(req,res){
-    res.render('users',{title: 'Protect Area '});
+//route di login.ejs e rimanda alla pagina personale
+app.get('/user',function(req,res){
+  res.render('user',{title: 'Protect Area '});
 });
-// codice temporaneo per pagin admin
+
+
+
+
+
+// codice temporaneo per pagin admin intanto lasciamo qst ( c'è qualcosa che non va)
 app.post('/users',function(req,res){
-    res.render('users',{title: 'Protect Area '});
+    res.redirect('https://console.firebase.google.com/u/0/project/fireproject-13ab0/');
+/**
+ * potrei mettere un richiamo ad una pagina di template dove ho tutti gli utenti
+ */
 });
 
 

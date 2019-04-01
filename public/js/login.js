@@ -1,6 +1,4 @@
-
 //controller del template login.ejs
-
 
 var config = {
     apiKey: "AIzaSyA1O6xRDWtwCGVyB-GQRyLmHlSKxFbdmX0",
@@ -12,6 +10,10 @@ var config = {
 };
 firebase.initializeApp(config);
 
+    //DB firebase
+    var database = firebase.database();
+    var dbUsers = database.ref('users/');
+
     //Form login with Email and Password, sfrutto Jquery ,ma è equivalente   var tmp = document.getElementById('username'); ecc..
      //Jquery class=login 
      $(".login form").on("submit", function(event) {
@@ -21,19 +23,16 @@ firebase.initializeApp(config);
         var password = $(".login .password").val();
 
         console.log(email);
-        console.log(password);
-        
+        //console.log(password);
 
-        firebase.auth().signInWithEmailAndPassword(email, password).then(function(user) {
-            console.log(user);
-            var user = firebase.auth().currentUser;
-            var email_verified = user.emailVerified;
-            // This gives you a Google Access Token. You can use it to access the Google API.
-            var token = result.credential.accessToken;
-            // The signed-in user info.
+        firebase.auth().signInWithEmailAndPassword(email, password).then(function(result) {
+            console.log(result);
+           
+            //The signed-in user info.
             var user = result.user;
-            // ...
-            userId = user.uid;
+            var email_verified = user.emailVerified;
+            
+            var userId = user.uid;
             //Create a user profile in the DB
             
           
@@ -58,25 +57,20 @@ firebase.initializeApp(config);
 
             }
             //prova
-            window.location.href = "users"; 
+            window.location.href = "user"; 
 
             
 
         }).catch(function(err){
+            
             console.log(err);
+            
             
         });
 
     });
 
     
-
-    //DB firebase
-    var database = firebase.database();
-    var dbUsers = database.ref('users/');
-    
-
-
     //add a realtime listener
     firebase.auth().onAuthStateChanged(firebaseUser => {
         if (firebaseUser) {
@@ -100,7 +94,7 @@ firebase.initializeApp(config);
             // The signed-in user info.
             var user = result.user;
             // ...
-            userId = user.uid;
+            var userId = user.uid;
             //Create a user profile in the DB
             
             dbUsers.once("value")
@@ -115,7 +109,7 @@ firebase.initializeApp(config);
                   } 
                   return;
               });
-            window.location.href = "users";
+            window.location.href = "user";
         }).catch(function (error) {
             // Handle Errors here.
             var errorCode = error.code;
@@ -145,7 +139,7 @@ firebase.initializeApp(config);
             // The signed-in user info.
             var user = result.user;
             // ...  
-            userId = user.uid;
+            var userId = user.uid;
 
             console.log(user.id);
             console.log(token);            
@@ -166,7 +160,7 @@ firebase.initializeApp(config);
                   }
                   return;
               });
-              window.location.href = "users";
+              window.location.href = "user";
         }).catch(function (error) {
             // Handle Errors here.
             var errorCode = error.code;
@@ -206,7 +200,7 @@ firebase.initializeApp(config);
                   }
                   return;
               });
-              window.location.href = "users";
+              window.location.href = "user";
         }).catch(function (error) {
             // Handle Errors here.
             var errorCode = error.code;
@@ -218,9 +212,3 @@ firebase.initializeApp(config);
             // ...
         });
     };
-
- 
-
-
-
-
